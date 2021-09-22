@@ -1,0 +1,61 @@
+﻿
+@model ElectroniceDeviceWeb.ViewModel.ProductViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div class="container">
+    <div class="col-md-4">
+        <div class="form-group">
+            Category :
+            @Html.DropDownListFor(model => model.CategoryID, new SelectList(Model.CategorySelectListItem, "Value", "Text")
+           , new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="form-group">
+            Product Code :
+            @Html.TextBoxFor(model => model.ProductCode, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="form-group">
+            Product Name :
+            @Html.TextBoxFor(model => model.ProductName, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="form-group">
+            Description :
+            @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="form-group">
+            Product Price :
+            @Html.TextBoxFor(model => model.ProductPrice, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="form-group">
+            Image :
+            @Html.TextBoxFor(model => model.ImagePath, new { Type = "file", @class = "form-control" })
+        </div>
+    </div>
+    <div>
+        <input type="button" value="Save" name="save" class="btn btn-primary" />
+        <input type="button" value="Reset" name="reset" class="btn btn-danger" />
+
+    </div>
+
+</div>
+

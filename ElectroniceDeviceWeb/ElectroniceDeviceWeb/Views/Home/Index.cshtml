@@ -32,4 +32,27 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Mua Ngay &raquo;</a></p>
     </div>
+    <div class="col-md-4">
+        @{
+            int a = 5;
+            int b = 6;
+            int c = a + b;
+            if (c > 10)
+            {
+                @:c is big number;
+
+            }
+            else
+            {
+                @:c is small number;
+
+            }
+        }
+        
+        @for (int i = 0; i < @c; i++)
+        {
+            <h2>@i.ToString() </h2>
+        }
+        
+    </div>
 </div>
