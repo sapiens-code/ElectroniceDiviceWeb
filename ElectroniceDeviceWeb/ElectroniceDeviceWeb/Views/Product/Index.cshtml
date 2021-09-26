@@ -8,6 +8,54 @@
 
 <h2>Index</h2>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btn-save").click(function () {
+
+            SaveProduct();
+        });
+    });
+
+    function ResetProduct() {
+        $("#CategoryID").val("1");
+        $("#ProductCode").val("");
+        $("#ProductName").val("");
+        $("#Description").val("");
+        $("#ProductPrice").val("");
+        $("#ImagePath").val("");
+    }
+
+    function SaveProduct() {
+        var formData = new FormData;
+        formData.append("CategoryID", $("#CategoryID").val());
+        formData.append("ProductCode", $("#ProductCode").val());
+        formData.append("ProductName", $("#ProductName").val());
+        formData.append("Description", $("#Description").val());
+        formData.append("ProductPrice", $("#ProductPrice").val());
+        formData.append("ImagePath", $("#ImagePath").get(0).files[0]);
+
+        $.ajax({
+            async: true,
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            url: '/Product/Index',
+            data: formData,
+            success: function (data) {
+                if (data.Success) {
+                    alert(data.Message);
+                    ResetProduct();
+                }
+
+            },
+            error: function () {
+                alert("there is some problem to add product");
+            }
+        });
+    }
+</script>
+
 <div class="container">
     <div class="col-md-4">
         <div class="form-group">
@@ -20,28 +68,28 @@
 
         <div class="form-group">
             Product Code :
-            @Html.TextBoxFor(model => model.ProductCode, new { @class = "form-control" })
+            @Html.TextBoxFor(model => model.ProductCode, new { @class = "form-control", autocomplete = "Off" })
         </div>
     </div>
     <div class="col-md-4">
 
         <div class="form-group">
             Product Name :
-            @Html.TextBoxFor(model => model.ProductName, new { @class = "form-control" })
+            @Html.TextBoxFor(model => model.ProductName, new { @class = "form-control", autocomplete = "Off" })
         </div>
     </div>
     <div class="col-md-4">
 
         <div class="form-group">
             Description :
-            @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+            @Html.TextBoxFor(model => model.Description, new { @class = "form-control", autocomplete = "Off" })
         </div>
     </div>
     <div class="col-md-4">
 
         <div class="form-group">
             Product Price :
-            @Html.TextBoxFor(model => model.ProductPrice, new { @class = "form-control" })
+            @Html.TextBoxFor(model => model.ProductPrice, new { @class = "form-control", autocomplete = "Off" })
         </div>
     </div>
     <div class="col-md-4">
@@ -52,8 +100,8 @@
         </div>
     </div>
     <div>
-        <input type="button" value="Save" name="save" class="btn btn-primary" />
-        <input type="button" value="Reset" name="reset" class="btn btn-danger" />
+        <input type="button" value="Save" name="save" class="btn btn-primary" id="btn-save" />
+        <input type="button" value="Reset" name="reset" class="btn btn-danger" id="btn-reset" />
 
     </div>
 
