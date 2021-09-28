@@ -8,6 +8,16 @@
     <Property Name="CategoryCode" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="CategoryName" Type="nvarchar" MaxLength="150" Nullable="false" />
   </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="Products">
     <Key>
       <PropertyRef Name="ProductID" />
@@ -22,6 +32,7 @@
   </EntityType>
   <EntityContainer Name="ECartDBModelStoreContainer">
     <EntitySet Name="Categories" EntityType="Self.Categories" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="Master" store:Type="Tables" />
     <EntitySet Name="Products" EntityType="Self.Products" Schema="Master" store:Type="Tables" />
   </EntityContainer>
 </Schema>
