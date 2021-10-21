@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ElectroniceDeviceWeb_dbEntities-Web.config Connection String" description="ElectroniceDeviceWeb_dbEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.ElectroniceDeviceWeb_db.csdl|res://*/Models.ElectroniceDeviceWeb_db.ssdl|res://*/Models.ElectroniceDeviceWeb_db.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=electronicedevicewebdbserver.database.windows.net;initial catalog=ElectroniceDeviceWeb_db;user id=lamminhhy;password=01674275557PassWord;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\SourceCode\\Project\ Web\\ElectroniceDiviceWeb\\ElectroniceDeviceWeb\\ElectroniceDeviceWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ElectroniceDeviceWeb_dbEntities']/@connectionString" />
+  </parameter>
+</parameters>

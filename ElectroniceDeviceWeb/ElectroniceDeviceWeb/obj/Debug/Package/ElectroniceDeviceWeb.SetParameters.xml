@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/" />
+  <setParameter name="ElectroniceDeviceWeb_dbEntities-Web.config Connection String" value="metadata=res://*/Models.ElectroniceDeviceWeb_db.csdl|res://*/Models.ElectroniceDeviceWeb_db.ssdl|res://*/Models.ElectroniceDeviceWeb_db.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=electronicedevicewebdbserver.database.windows.net;initial catalog=ElectroniceDeviceWeb_db;user id=lamminhhy;password=01674275557PassWord;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+  <setParameter name="ECartDBEntities-Web.config Connection String" value="metadata=res://*/Models.ElectroniceDiviceWeb_db.csdl|res://*/Models.ElectroniceDiviceWeb_db.ssdl|res://*/Models.ElectroniceDiviceWeb_db.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-6PUFK9M;initial catalog=ECartDB;user id=sa;password=sapassword;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+  <setParameter name="ElectricDeviceDBEntities-Web.config Connection String" value="metadata=res://*/Models.ElectricDeviceDB.csdl|res://*/Models.ElectricDeviceDB.ssdl|res://*/Models.ElectricDeviceDB.msl;provider=System.Data.SqlClient;provider connection string='data source=&quot;aa19bpz2ge4alwh.cznzt1dpircy.us-east-1.rds.amazonaws.com, 1433&quot;;initial catalog=ElectricDeviceDB;user id=sa;password=sapassword;MultipleActiveResultSets=True;App=EntityFramework'" />
+</parameters>

@@ -10,18 +10,18 @@ namespace ElectroniceDeviceWeb.Controllers
 {
     public class ShoppingController : Controller
     {
-        private ECartDBEntities ECartDBEntities;
+        private ElectricDeviceDBEntities DB;
 
         public ShoppingController()
         {
-            ECartDBEntities = new ECartDBEntities();
+            DB = new ElectricDeviceDBEntities();
         }
 
         // GET: Shopping
         public ActionResult Index()
         {
-            IEnumerable<ShoppingViewModel> shoppingViewModels = (from item in ECartDBEntities.Products
-                                                                 join cate in ECartDBEntities.Categories
+            IEnumerable<ShoppingViewModel> shoppingViewModels = (from item in DB.Products
+                                                                 join cate in DB.Categories
                                                                  on item.CategoryID equals cate.CategoryId
                                                                  select new ShoppingViewModel()
                                                                  {
@@ -31,7 +31,6 @@ namespace ElectroniceDeviceWeb.Controllers
                                                                      ProductPrice = item.ProductPrice,
                                                                      ProductID = item.ProductID,
                                                                      Category = cate.CategoryName,
-                                                                     ItemCode = item.ProductCode
                                                                  });
             return View(shoppingViewModels);
         }

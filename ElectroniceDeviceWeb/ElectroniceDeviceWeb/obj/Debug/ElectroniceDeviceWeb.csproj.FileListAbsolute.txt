@@ -69,7 +69,6 @@ F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceD
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\bin\Newtonsoft.Json.xml
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\bin\Antlr3.Runtime.pdb
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\obj\Debug\ElectroniceDeviceWeb.csprojAssemblyReference.cache
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\obj\Debug\ElectroniceDeviceWeb.csproj.CoreCompileInputs.cache
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\obj\Debug\ElectroniceDeviceWeb.csproj.CopyComplete
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\obj\Debug\ElectroniceDeviceWeb.dll
@@ -78,3 +77,4 @@ F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceD
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\bin\EntityFramework.SqlServer.dll
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\bin\EntityFramework.xml
 F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\bin\EntityFramework.SqlServer.xml
+F:\SourceCode\Project Web\ElectroniceDiviceWeb\ElectroniceDeviceWeb\ElectroniceDeviceWeb\obj\Debug\ElectroniceDeviceWeb.csprojAssemblyReference.cache

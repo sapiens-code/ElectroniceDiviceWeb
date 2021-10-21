@@ -13,6 +13,5 @@ namespace ElectroniceDeviceWeb.ViewModel
         public string ImagePath { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
-        public string ItemCode { get; set; }
     }
 }

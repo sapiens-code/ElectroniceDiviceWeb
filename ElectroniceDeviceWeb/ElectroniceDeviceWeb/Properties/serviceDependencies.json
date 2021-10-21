@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ECartDBEntities"
+    },
+    "secrets1": {
+      "type": "secrets"
+    }
+  }
+}

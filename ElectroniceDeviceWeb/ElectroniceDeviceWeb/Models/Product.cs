@@ -16,7 +16,6 @@ namespace ElectroniceDeviceWeb.Models
     {
         public System.Guid ProductID { get; set; }
         public int CategoryID { get; set; }
-        public string ProductCode { get; set; }
         public string ProductName { get; set; }
         public string Desciption { get; set; }
         public string ImagePath { get; set; }
